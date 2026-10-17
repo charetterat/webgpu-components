@@ -1,1 +1,369 @@
-{"updated": "2026-10-14", "meta": {"title": "Awesome WebGPU Components", "tagline": "Curated, link-verified building blocks for the WebGPU era: engines, toolkits, framework components and devtools.", "intro": "WebGPU has quietly crossed from 'upcoming API' to the default rendering backend of the modern web: three.js and Babylon.js ship production WebGPU renderers, Rust's wgpu implements the spec natively, and a new generation of component libraries — shader effects you drop into React or Svelte, UI kits rendered inside 3D scenes, GPU charting — is being built on top. This list indexes those building blocks. Every link is checked to be live when this README is regenerated.", "owner_repo": "charetterat/webgpu-components", "disclaimer": "Compiled from public sources — no independent testing of the linked projects."}, "sections": [{"title": "Engines and Renderers with WebGPU Backends", "icon": "🚀", "description": "Full rendering engines where WebGPU is either the native foundation or a production backend.", "items": [{"name": "three.js", "url": "https://github.com/mrdoob/three.js", "what": "JavaScript 3D library whose renderer supports the WebGPU backend alongside WebGL.", "tags": ["3d", "renderer"]}, {"name": "Babylon.js", "url": "https://github.com/BabylonJS/Babylon.js", "what": "Open game and rendering engine with a WebGPU engine backend and a node-based scene model.", "tags": ["engine", "3d"]}, {"name": "engine (PlayCanvas)", "url": "https://github.com/playcanvas/engine", "what": "Web graphics runtime built on WebGL, WebGPU, WebXR and glTF for interactive 3D apps.", "tags": ["engine", "gltf"]}, {"name": "Orillusion", "url": "https://github.com/Orillusion/orillusion", "what": "Pure Web3D rendering engine built entirely on WebGPU with a component-based ECS design.", "tags": ["engine", "ecs"]}, {"name": "spark", "url": "https://github.com/sparkjsdev/spark", "what": "Advanced 3D Gaussian Splatting renderer for three.js, WebGPU-first.", "tags": ["gaussian-splatting", "renderer"]}, {"name": "maplibre-rs", "url": "https://github.com/maplibre/maplibre-rs", "what": "Rust-based WebGPU map renderer for Web, Mobile and Desktop.", "tags": ["maps", "renderer"]}, {"name": "spektral", "url": "https://github.com/kaltwrk/spektral", "what": "Minimalist framework for modern WebGPU visuals.", "tags": ["framework"]}, {"name": "burrow", "url": "https://github.com/toji/burrow", "what": "Toy WebGPU deferred renderer demonstrating a practical rendering architecture.", "tags": ["renderer", "deferred"]}]}, {"title": "Low-Level Toolkits and GPU Utilities", "icon": "🔧", "description": "Implementations, wrappers and shader libraries one level below the frameworks.", "items": [{"name": "wgpu", "url": "https://github.com/gfx-rs/wgpu", "what": "Cross-platform, safe, pure-Rust graphics API implementing the WebGPU spec for native and web.", "tags": ["rust", "graphics"]}, {"name": "wgpu-native", "url": "https://github.com/gfx-rs/wgpu-native", "what": "Native WebGPU implementation based on wgpu-core, exposing WebGPU as a C library.", "tags": ["native", "bindings"]}, {"name": "gpu.cpp", "url": "https://github.com/AnswerDotAI/gpu.cpp", "what": "A lightweight library for portable low-level GPU computation using WebGPU compute shaders.", "tags": ["compute", "cpp"]}, {"name": "TypeGPU", "url": "https://github.com/software-mansion/TypeGPU", "what": "Modular toolkit for WebGPU with advanced type inference for writing shaders in TypeScript.", "tags": ["typescript", "toolkit"]}, {"name": "vgpu", "url": "https://github.com/vercel-labs/vgpu", "what": "Modular cross-runtime WebGPU library for shaders, 3D scenes, GPU tensors and math.", "tags": ["library", "shaders"]}, {"name": "webgpu-utils", "url": "https://github.com/greggman/webgpu-utils", "what": "Helpers for WebGPU covering pipeline setup, resources and common boilerplate.", "tags": ["utils"]}, {"name": "lygia", "url": "https://github.com/patriciogonzalezvivo/lygia", "what": "Granular multi-language shader library including WGSL for WebGPU pipelines.", "tags": ["shaders", "wgsl"]}, {"name": "pristine-grid-webgpu", "url": "https://github.com/toji/pristine-grid-webgpu", "what": "A WebGPU implementation of the Pristine Grid shader technique.", "tags": ["shaders", "grid"]}, {"name": "webgpu-bundle-culling", "url": "https://github.com/toji/webgpu-bundle-culling", "what": "WebGPU demonstration of frustum culling with render bundles through indirect instructions.", "tags": ["culling", "performance"]}, {"name": "watlas", "url": "https://github.com/toji/watlas", "what": "Web port of XAtlas: mesh parameterization and UV unwrapping usable in WebGPU pipelines.", "tags": ["geometry", "utils"]}]}, {"title": "Framework Components", "icon": "🧩", "description": "Drop-in components and bindings for React, React Native, react-three-fiber and friends.", "items": [{"name": "shaders (shader-effects-inc)", "url": "https://github.com/shader-effects-inc/shaders", "what": "WebGPU shader-effect components for React, Vue, Svelte, Solid, JS and Framer.", "tags": ["components", "react"]}, {"name": "drei", "url": "https://github.com/pmndrs/drei", "what": "Useful helper components and abstractions for react-three-fiber scenes.", "tags": ["react", "r3f"]}, {"name": "uikit", "url": "https://github.com/pmndrs/uikit", "what": "User interface components for react-three-fiber rendered inside 3D scenes.", "tags": ["ui", "r3f"]}, {"name": "react (PlayCanvas)", "url": "https://github.com/playcanvas/react", "what": "Build 3D apps with React using PlayCanvas engine components, with WebGPU support.", "tags": ["react", "3d"]}, {"name": "react-native-webgpu", "url": "https://github.com/wcandillon/react-native-webgpu", "what": "React Native WebGPU bindings powered by Dawn.", "tags": ["react-native", "mobile"]}, {"name": "react-native-effects", "url": "https://github.com/blazejkustra/react-native-effects", "what": "WebGPU-powered shader effects for React Native as drop-in components on a separate thread.", "tags": ["react-native", "shaders"]}, {"name": "r3f-webgpu-starter", "url": "https://github.com/ektogamat/r3f-webgpu-starter", "what": "React Three Fiber WebGPU starter with post processing and a demo scene.", "tags": ["react", "starter"]}, {"name": "liquid-glass-studio", "url": "https://github.com/iyinchao/liquid-glass-studio", "what": "Recreates Apple's Liquid Glass UI for the web, powered by WebGL2 and WebGPU.", "tags": ["ui", "effects"]}]}, {"title": "Developer Tools, Dashboards and Samples", "icon": "🛠️", "description": "Inspectors, charting, official samples and tutorials for day-to-day WebGPU work.", "items": [{"name": "webgpu-samples", "url": "https://github.com/webgpu/webgpu-samples", "what": "The official WebGPU samples repository demonstrating the API's features.", "tags": ["samples", "official"]}, {"name": "ChartGPU", "url": "https://github.com/ChartGPU/ChartGPU", "what": "Open source, WebGPU-based charting library for high-performance data visualization.", "tags": ["charts", "dataviz"]}, {"name": "webgpu_inspector", "url": "https://github.com/brendan-duncan/webgpu_inspector", "what": "Inspection debugger for WebGPU: inspect buffers, textures, pipelines and command streams.", "tags": ["debugging", "devtools"]}, {"name": "webgpu-claude-skill", "url": "https://github.com/dgreenheck/webgpu-claude-skill", "what": "A Claude skill for developing WebGPU applications with Three.js.", "tags": ["tooling", "threejs"]}, {"name": "hello-triangle-webgpu", "url": "https://github.com/toji/hello-triangle-webgpu", "what": "Well-commented hello triangle example for learning the WebGPU API.", "tags": ["tutorial", "example"]}]}], "verification_sources": [{"name": "three.js", "url": "https://github.com/mrdoob/three.js", "expected_token": "mrdoob/three.js"}, {"name": "Babylon.js", "url": "https://github.com/BabylonJS/Babylon.js", "expected_token": "BabylonJS/Babylon.js"}, {"name": "wgpu", "url": "https://github.com/gfx-rs/wgpu", "expected_token": "gfx-rs/wgpu"}, {"name": "webgpu-samples", "url": "https://github.com/webgpu/webgpu-samples", "expected_token": "webgpu/webgpu-samples"}, {"name": "shaders (shader-effects-inc)", "url": "https://github.com/shader-effects-inc/shaders", "expected_token": "shader-effects-inc/shaders"}, {"name": "TypeGPU", "url": "https://github.com/software-mansion/TypeGPU", "expected_token": "software-mansion/TypeGPU"}, {"name": "Orillusion", "url": "https://github.com/Orillusion/orillusion", "expected_token": "Orillusion/orillusion"}, {"name": "PlayCanvas engine", "url": "https://github.com/playcanvas/engine", "expected_token": "playcanvas/engine"}, {"name": "ChartGPU", "url": "https://github.com/ChartGPU/ChartGPU", "expected_token": "ChartGPU/ChartGPU"}, {"name": "webgpu_inspector", "url": "https://github.com/brendan-duncan/webgpu_inspector", "expected_token": "brendan-duncan/webgpu_inspector"}]}
+{
+  "updated": "2026-10-17",
+  "meta": {
+    "title": "Awesome WebGPU Components",
+    "tagline": "Curated, link-verified building blocks for the WebGPU era: engines, toolkits, framework components and devtools.",
+    "intro": "WebGPU has quietly crossed from 'upcoming API' to the default rendering backend of the modern web: three.js and Babylon.js ship production WebGPU renderers, Rust's wgpu implements the spec natively, and a new generation of component libraries — shader effects you drop into React or Svelte, UI kits rendered inside 3D scenes, GPU charting — is being built on top. This list indexes those building blocks. Every link is checked to be live when this README is regenerated.",
+    "owner_repo": "charetterat/webgpu-components",
+    "disclaimer": "Compiled from public sources — no independent testing of the linked projects."
+  },
+  "sections": [
+    {
+      "title": "Engines and Renderers with WebGPU Backends",
+      "icon": "🚀",
+      "description": "Full rendering engines where WebGPU is either the native foundation or a production backend.",
+      "items": [
+        {
+          "name": "three.js",
+          "url": "https://github.com/mrdoob/three.js",
+          "what": "JavaScript 3D library whose renderer supports the WebGPU backend alongside WebGL.",
+          "tags": [
+            "3d",
+            "renderer"
+          ]
+        },
+        {
+          "name": "Babylon.js",
+          "url": "https://github.com/BabylonJS/Babylon.js",
+          "what": "Open game and rendering engine with a WebGPU engine backend and a node-based scene model.",
+          "tags": [
+            "engine",
+            "3d"
+          ]
+        },
+        {
+          "name": "engine (PlayCanvas)",
+          "url": "https://github.com/playcanvas/engine",
+          "what": "Web graphics runtime built on WebGL, WebGPU, WebXR and glTF for interactive 3D apps.",
+          "tags": [
+            "engine",
+            "gltf"
+          ]
+        },
+        {
+          "name": "Orillusion",
+          "url": "https://github.com/Orillusion/orillusion",
+          "what": "Pure Web3D rendering engine built entirely on WebGPU with a component-based ECS design.",
+          "tags": [
+            "engine",
+            "ecs"
+          ]
+        },
+        {
+          "name": "spark",
+          "url": "https://github.com/sparkjsdev/spark",
+          "what": "Advanced 3D Gaussian Splatting renderer for three.js, WebGPU-first.",
+          "tags": [
+            "gaussian-splatting",
+            "renderer"
+          ]
+        },
+        {
+          "name": "maplibre-rs",
+          "url": "https://github.com/maplibre/maplibre-rs",
+          "what": "Rust-based WebGPU map renderer for Web, Mobile and Desktop.",
+          "tags": [
+            "maps",
+            "renderer"
+          ]
+        },
+        {
+          "name": "spektral",
+          "url": "https://github.com/kaltwrk/spektral",
+          "what": "Minimalist framework for modern WebGPU visuals.",
+          "tags": [
+            "framework"
+          ]
+        },
+        {
+          "name": "burrow",
+          "url": "https://github.com/toji/burrow",
+          "what": "Toy WebGPU deferred renderer demonstrating a practical rendering architecture.",
+          "tags": [
+            "renderer",
+            "deferred"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Low-Level Toolkits and GPU Utilities",
+      "icon": "🔧",
+      "description": "Implementations, wrappers and shader libraries one level below the frameworks.",
+      "items": [
+        {
+          "name": "wgpu",
+          "url": "https://github.com/gfx-rs/wgpu",
+          "what": "Cross-platform, safe, pure-Rust graphics API implementing the WebGPU spec for native and web.",
+          "tags": [
+            "rust",
+            "graphics"
+          ]
+        },
+        {
+          "name": "wgpu-native",
+          "url": "https://github.com/gfx-rs/wgpu-native",
+          "what": "Native WebGPU implementation based on wgpu-core, exposing WebGPU as a C library.",
+          "tags": [
+            "native",
+            "bindings"
+          ]
+        },
+        {
+          "name": "gpu.cpp",
+          "url": "https://github.com/AnswerDotAI/gpu.cpp",
+          "what": "A lightweight library for portable low-level GPU computation using WebGPU compute shaders.",
+          "tags": [
+            "compute",
+            "cpp"
+          ]
+        },
+        {
+          "name": "TypeGPU",
+          "url": "https://github.com/software-mansion/TypeGPU",
+          "what": "Modular toolkit for WebGPU with advanced type inference for writing shaders in TypeScript.",
+          "tags": [
+            "typescript",
+            "toolkit"
+          ]
+        },
+        {
+          "name": "vgpu",
+          "url": "https://github.com/vercel-labs/vgpu",
+          "what": "Modular cross-runtime WebGPU library for shaders, 3D scenes, GPU tensors and math.",
+          "tags": [
+            "library",
+            "shaders"
+          ]
+        },
+        {
+          "name": "webgpu-utils",
+          "url": "https://github.com/greggman/webgpu-utils",
+          "what": "Helpers for WebGPU covering pipeline setup, resources and common boilerplate.",
+          "tags": [
+            "utils"
+          ]
+        },
+        {
+          "name": "lygia",
+          "url": "https://github.com/patriciogonzalezvivo/lygia",
+          "what": "Granular multi-language shader library including WGSL for WebGPU pipelines.",
+          "tags": [
+            "shaders",
+            "wgsl"
+          ]
+        },
+        {
+          "name": "pristine-grid-webgpu",
+          "url": "https://github.com/toji/pristine-grid-webgpu",
+          "what": "A WebGPU implementation of the Pristine Grid shader technique.",
+          "tags": [
+            "shaders",
+            "grid"
+          ]
+        },
+        {
+          "name": "webgpu-bundle-culling",
+          "url": "https://github.com/toji/webgpu-bundle-culling",
+          "what": "WebGPU demonstration of frustum culling with render bundles through indirect instructions.",
+          "tags": [
+            "culling",
+            "performance"
+          ]
+        },
+        {
+          "name": "watlas",
+          "url": "https://github.com/toji/watlas",
+          "what": "Web port of XAtlas: mesh parameterization and UV unwrapping usable in WebGPU pipelines.",
+          "tags": [
+            "geometry",
+            "utils"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Framework Components",
+      "icon": "🧩",
+      "description": "Drop-in components and bindings for React, React Native, react-three-fiber and friends.",
+      "items": [
+        {
+          "name": "shaders (shader-effects-inc)",
+          "url": "https://github.com/shader-effects-inc/shaders",
+          "what": "WebGPU shader-effect components for React, Vue, Svelte, Solid, JS and Framer.",
+          "tags": [
+            "components",
+            "react"
+          ]
+        },
+        {
+          "name": "drei",
+          "url": "https://github.com/pmndrs/drei",
+          "what": "Useful helper components and abstractions for react-three-fiber scenes.",
+          "tags": [
+            "react",
+            "r3f"
+          ]
+        },
+        {
+          "name": "uikit",
+          "url": "https://github.com/pmndrs/uikit",
+          "what": "User interface components for react-three-fiber rendered inside 3D scenes.",
+          "tags": [
+            "ui",
+            "r3f"
+          ]
+        },
+        {
+          "name": "react (PlayCanvas)",
+          "url": "https://github.com/playcanvas/react",
+          "what": "Build 3D apps with React using PlayCanvas engine components, with WebGPU support.",
+          "tags": [
+            "react",
+            "3d"
+          ]
+        },
+        {
+          "name": "react-native-webgpu",
+          "url": "https://github.com/wcandillon/react-native-webgpu",
+          "what": "React Native WebGPU bindings powered by Dawn.",
+          "tags": [
+            "react-native",
+            "mobile"
+          ]
+        },
+        {
+          "name": "react-native-effects",
+          "url": "https://github.com/blazejkustra/react-native-effects",
+          "what": "WebGPU-powered shader effects for React Native as drop-in components on a separate thread.",
+          "tags": [
+            "react-native",
+            "shaders"
+          ]
+        },
+        {
+          "name": "r3f-webgpu-starter",
+          "url": "https://github.com/ektogamat/r3f-webgpu-starter",
+          "what": "React Three Fiber WebGPU starter with post processing and a demo scene.",
+          "tags": [
+            "react",
+            "starter"
+          ]
+        },
+        {
+          "name": "liquid-glass-studio",
+          "url": "https://github.com/iyinchao/liquid-glass-studio",
+          "what": "Recreates Apple's Liquid Glass UI for the web, powered by WebGL2 and WebGPU.",
+          "tags": [
+            "ui",
+            "effects"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Developer Tools, Dashboards and Samples",
+      "icon": "🛠️",
+      "description": "Inspectors, charting, official samples and tutorials for day-to-day WebGPU work.",
+      "items": [
+        {
+          "name": "webgpu-samples",
+          "url": "https://github.com/webgpu/webgpu-samples",
+          "what": "The official WebGPU samples repository demonstrating the API's features.",
+          "tags": [
+            "samples",
+            "official"
+          ]
+        },
+        {
+          "name": "ChartGPU",
+          "url": "https://github.com/ChartGPU/ChartGPU",
+          "what": "Open source, WebGPU-based charting library for high-performance data visualization.",
+          "tags": [
+            "charts",
+            "dataviz"
+          ]
+        },
+        {
+          "name": "webgpu_inspector",
+          "url": "https://github.com/brendan-duncan/webgpu_inspector",
+          "what": "Inspection debugger for WebGPU: inspect buffers, textures, pipelines and command streams.",
+          "tags": [
+            "debugging",
+            "devtools"
+          ]
+        },
+        {
+          "name": "webgpu-claude-skill",
+          "url": "https://github.com/dgreenheck/webgpu-claude-skill",
+          "what": "A Claude skill for developing WebGPU applications with Three.js.",
+          "tags": [
+            "tooling",
+            "threejs"
+          ]
+        },
+        {
+          "name": "hello-triangle-webgpu",
+          "url": "https://github.com/toji/hello-triangle-webgpu",
+          "what": "Well-commented hello triangle example for learning the WebGPU API.",
+          "tags": [
+            "tutorial",
+            "example"
+          ]
+        }
+      ]
+    }
+  ],
+  "verification_sources": [
+    {
+      "name": "three.js",
+      "url": "https://github.com/mrdoob/three.js",
+      "expected_token": "mrdoob/three.js"
+    },
+    {
+      "name": "Babylon.js",
+      "url": "https://github.com/BabylonJS/Babylon.js",
+      "expected_token": "BabylonJS/Babylon.js"
+    },
+    {
+      "name": "wgpu",
+      "url": "https://github.com/gfx-rs/wgpu",
+      "expected_token": "gfx-rs/wgpu"
+    },
+    {
+      "name": "webgpu-samples",
+      "url": "https://github.com/webgpu/webgpu-samples",
+      "expected_token": "webgpu/webgpu-samples"
+    },
+    {
+      "name": "shaders (shader-effects-inc)",
+      "url": "https://github.com/shader-effects-inc/shaders",
+      "expected_token": "shader-effects-inc/shaders"
+    },
+    {
+      "name": "TypeGPU",
+      "url": "https://github.com/software-mansion/TypeGPU",
+      "expected_token": "software-mansion/TypeGPU"
+    },
+    {
+      "name": "Orillusion",
+      "url": "https://github.com/Orillusion/orillusion",
+      "expected_token": "Orillusion/orillusion"
+    },
+    {
+      "name": "PlayCanvas engine",
+      "url": "https://github.com/playcanvas/engine",
+      "expected_token": "playcanvas/engine"
+    },
+    {
+      "name": "ChartGPU",
+      "url": "https://github.com/ChartGPU/ChartGPU",
+      "expected_token": "ChartGPU/ChartGPU"
+    },
+    {
+      "name": "webgpu_inspector",
+      "url": "https://github.com/brendan-duncan/webgpu_inspector",
+      "expected_token": "brendan-duncan/webgpu_inspector"
+    }
+  ]
+}
