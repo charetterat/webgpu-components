@@ -1,4 +1,4 @@
-# Awesome WebGPU Components (updated 2026-10-24)
+# Awesome WebGPU Components (updated 2026-10-25)
 
 > Curated, link-verified building blocks for the WebGPU era: engines, toolkits, framework components and devtools.
 
