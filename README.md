@@ -1,4 +1,4 @@
-# Awesome WebGPU Components (updated 2026-10-27)
+# Awesome WebGPU Components (updated 2026-10-28)
 
 > Curated, link-verified building blocks for the WebGPU era: engines, toolkits, framework components and devtools.
 
@@ -79,7 +79,7 @@ Inspectors, charting, official samples and tutorials for day-to-day WebGPU work.
 
 - **31** entries across **4** sections.
 - Compiled from public sources; every linked project carries its own license.
-- Last updated: **2026-10-27**.
+- Last updated: **2026-10-28**.
 - Data lives in `data/content.json` — this README is generated, do not edit by hand.
 
 ## License
